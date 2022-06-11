@@ -45,12 +45,6 @@ Resources:
         - Namespace: aws:autoscaling:launchconfiguration
           OptionName: IamInstanceProfile
           Value: !Ref BackendInstanceProfile
-        - Namespace: aws:elb:listener:80
-          OptionName: InstancePort
-          Value: 8080
-        - Namespace: aws:elasticbeanstalk:application
-          OptionName: Application Healthcheck URL
-          Value: TCP:8080
       SolutionStackName: 64bit Amazon Linux 2 v3.4.16 running Docker
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
 
