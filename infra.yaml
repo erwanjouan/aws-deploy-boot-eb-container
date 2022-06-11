@@ -30,6 +30,9 @@ Resources:
       ApplicationName: !Ref SpringBootApplication
       Description: A display of speed boot application
       OptionSettings:
+        - Namespace: aws:ec2:instances
+          OptionName: InstanceTypes
+          Value: t2.medium
         - Namespace: aws:autoscaling:asg
           OptionName: MinSize
           Value: 2
