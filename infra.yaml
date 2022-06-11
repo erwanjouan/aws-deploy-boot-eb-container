@@ -1,6 +1,6 @@
 
 AWSTemplateFormatVersion: 2010-09-09
-Description: A Java SpringBoot application (jar) deployed with Elastic Beanstalk
+Description: A Java SpringBoot application (Docker) deployed with Elastic Beanstalk
 Parameters:
   ProjectName:
     Type: String
